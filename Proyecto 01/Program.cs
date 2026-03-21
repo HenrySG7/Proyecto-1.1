@@ -110,5 +110,14 @@
                     }
 
                     break;
+
+                case 2:
+                    Console.WriteLine("--- REGLAS ---");
+                    Console.WriteLine("Todo: cualquier hora");
+                    Console.WriteLine("+13: 6 a 22");
+                    Console.WriteLine("+18: 22 a 5");
+                    Console.WriteLine("Duraciones segun tipo");
+                    Console.WriteLine("Produccion baja no permite +18");
+                    break;
             }
-    
+   
