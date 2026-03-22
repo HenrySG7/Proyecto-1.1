@@ -9,7 +9,7 @@
 
         do
         {
-            Console.WriteLine("----- MENU GENERAL -----");
+            Console.WriteLine("\n----- MENU GENERAL -----");
             Console.WriteLine("1. Evaluar nuevo contenido");
             Console.WriteLine("2. Mostrar reglas");
             Console.WriteLine("3. Mostrar estadisticas");
@@ -112,12 +112,26 @@
                     break;
 
                 case 2:
-                    Console.WriteLine("--- REGLAS ---");
+                    Console.WriteLine("\n--- REGLAS ---");
                     Console.WriteLine("Todo: cualquier hora");
                     Console.WriteLine("+13: 6 a 22");
                     Console.WriteLine("+18: 22 a 5");
                     Console.WriteLine("Duraciones segun tipo");
                     Console.WriteLine("Produccion baja no permite +18");
+                    break;
+
+                case 3:
+                    Console.WriteLine("\n--- ESTADISTICAS ---");
+                    Console.WriteLine("Total: " + total);
+                    Console.WriteLine("Publicados: " + publicados);
+                    Console.WriteLine("Rechazados: " + rechazados);
+                    Console.WriteLine("Revision: " + revision);
+
+                    if (total > 0)
+                    {
+                        double porcentaje = (publicados * 100.0) / total;
+                        Console.WriteLine("Aprobacion: " + porcentaje + "%");
+                    }
                     break;
             }
    
