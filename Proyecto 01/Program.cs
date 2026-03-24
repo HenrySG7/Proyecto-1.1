@@ -133,5 +133,26 @@
                         Console.WriteLine("Aprobacion: " + porcentaje + "%");
                     }
                     break;
+
+                case 4:
+                    total = 0;
+                    publicados = 0;
+                    rechazados = 0;
+                    revision = 0;
+                    Console.WriteLine("Estadisticas reiniciadas");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Saliendo...");
+                    break;
+
+                default:
+                    Console.WriteLine("Opcion invalida");
+                    break;
             }
+
+        } while (opcion != 5);
+    }
+}
+            
    
